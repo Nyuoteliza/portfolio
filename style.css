@@ -1,0 +1,84 @@
+.project{
+    display: none;
+    overflow-y: scroll;
+    height: 65vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.project .card{
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project .card .highlight{
+    height: 50%;
+    color: white;
+    background-position: center;
+    background-size: contain;
+}
+
+.uno{
+    background: url(assets/assignment1.png)
+}
+
+.dos{
+    background: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.39)), url(assets/assignment2.png)
+}
+
+.tres{
+    background: url(assets/assignment3.png)
+}
+
+.quatro{
+    background: url(assets/assignment4.png)
+}
+.project .card h3, .project .card p{
+    margin: 10px;
+}
+
+.content{
+    position: absolute;
+    height: 70vh;
+    width: 70vw;
+    top: 15vh;
+    left: 15vw;
+    background: white;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.155);
+    z-index: 999;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.content h1, .content p{
+    margin: 10px;
+}
+
+.images{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.content img{
+    margin: 5px;
+    /* height: 300px;
+    width: 100%; */
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+.content{
+    display: none;
+    overflow: hidden;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+#close{
+    cursor: pointer;
+}
